@@ -106,6 +106,9 @@ Recompile your code to pick up the new signature.
 `com.intellij.ide.actions.SearchBackAction` class now extends `com.intellij.openapi.editor.actionSystem.EditorAction` and inherits its final method `actionPerformed`
 : Please use the `com.intellij.editorActionHandler` extension point to register a different handler for the action.
 
+`com.intellij.lexer.RestartableLexer.getRestartableState()` method removed
+: Please use `com.intellij.lexer.RestartableLexer.isRestartableState(int state)` instead.
+
 # 2019.1
  
 ## Changes in IntelliJ Platform 2019.1
